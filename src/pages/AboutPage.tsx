@@ -1,98 +1,96 @@
-// Importando os ícones atualizados do Lucide
 import {
   CheckCircle2,
   GitBranch,
   Github,
   Lightbulb,
-  LinkedinIcon,
+  Linkedin,
   Mail,
   Users,
 } from "lucide-react"
 
-const AboutPage = () => {
-  const team = [
-    {
-      nome: "Marcos alexandre",
-      funcao: "Fullstack Developer",
-      img: "/img/menbers/marcos.jpeg",
-      linkedin: "https://www.linkedin.com/in/marcsfic/",
-      github: "https://github.com/Marcsfic98",
-      email: "marcsfic98@gmil.com",
-    },
-    {
-      nome: "Matheus Carvalho",
-      funcao: "Fullstack Developer",
-      img: "/img/menbers/matheusc.jpeg",
-      linkedin: "https://www.linkedin.com/in/mcarvalho-dev/",
-      github: "https://github.com/mc4rvalho",
-      email: "mcarvalho093@gmail.com",
-    },
-    {
-      nome: "Matheus Lins",
-      funcao: "Fullstack Developer",
-      img: "/img/menbers/lins.jpeg",
-      linkedin:
-        "https://www.linkedin.com/in/matheus-antonio-santos-lins-091946217",
-      github: "https://github.com/Matheus-Lins",
-      email: "matheusantonioslins@outlook.com",
-    },
-    {
-      nome: "Allyson Gonçalves",
-      funcao: "Fullstack Developer",
-      img: "/img/menbers/allyson.jpeg",
-      linkedin: "https://www.linkedin.com/in/allysongon%C3%A7alves/",
-      github: "https://github.com/allysonaggp",
-      email: "allysonaggp@gmail.com",
-    },
-    {
-      nome: "Juliermes Mendes",
-      funcao: "Fullstack Developer",
-      img: "/img/menbers/ju.jpeg",
-      linkedin: "https://www.linkedin.com/in/juliermes/",
-      github: "https://github.com/juliomendes160",
-      email: "juliomendes160@hotmail.com",
-    },
-    {
-      nome: "Alexandre Julio",
-      funcao: "Fullstack Developer",
-      img: "/img/menbers/alexandre.png",
-      linkedin: "https://www.linkedin.com/in/alexandre-julio-0b007a211/",
-      github: "https://github.com/AlexandreJulioDev",
-      email: "Alexandre.julio8772@gmail.com",
-    },
-  ]
+const TEAM_MEMBERS = [
+  {
+    nome: "Marcos Alexandre",
+    funcao: "Fullstack Developer",
+    img: "/img/members/marcos.jpeg",
+    linkedin: "https://www.linkedin.com/in/marcsfic/",
+    github: "https://github.com/Marcsfic98",
+    email: "marcsfic98@gmail.com",
+  },
+  {
+    nome: "Matheus Carvalho",
+    funcao: "Fullstack Developer",
+    img: "/img/members/matheusc.jpeg",
+    linkedin: "https://www.linkedin.com/in/mcarvalho-dev/",
+    github: "https://github.com/mc4rvalho",
+    email: "mcarvalho093@gmail.com",
+  },
+  {
+    nome: "Matheus Lins",
+    funcao: "Fullstack Developer",
+    img: "/img/members/lins.jpeg",
+    linkedin:
+      "https://www.linkedin.com/in/matheus-antonio-santos-lins-091946217",
+    github: "https://github.com/Matheus-Lins",
+    email: "matheusantonioslins@outlook.com",
+  },
+  {
+    nome: "Allyson Gonçalves",
+    funcao: "Fullstack Developer",
+    img: "/img/members/allyson.jpeg",
+    linkedin: "https://www.linkedin.com/in/allysongon%C3%A7alves/",
+    github: "https://github.com/allysonaggp",
+    email: "allysonaggp@gmail.com",
+  },
+  {
+    nome: "Juliermes Mendes",
+    funcao: "Fullstack Developer",
+    img: "/img/members/ju.jpeg",
+    linkedin: "https://www.linkedin.com/in/juliermes/",
+    github: "https://github.com/juliomendes160",
+    email: "juliomendes160@hotmail.com",
+  },
+  {
+    nome: "Alexandre Julio",
+    funcao: "Fullstack Developer",
+    img: "/img/members/alexandre.png",
+    linkedin: "https://www.linkedin.com/in/alexandre-julio-0b007a211/",
+    github: "https://github.com/AlexandreJulioDev",
+    email: "alexandre.julio8772@gmail.com",
+  },
+]
 
-  const methodology = [
-    {
-      title: "Metodologia Scrum",
-      desc: "Ciclos de entrega ágil para garantir valor constante ao projeto.",
-      icon: <Users className="text-blue-600" size={24} />,
-      bgColor: "bg-blue-100",
-    },
-    {
-      title: "Brainstorming",
-      desc: "Sessões criativas em equipe para idealização e resolução de problemas.",
-      icon: <Lightbulb className="text-yellow-600" size={24} />,
-      bgColor: "bg-yellow-100",
-    },
-    {
-      title: "Divisão de Tarefas",
-      desc: "Organização estratégica de demandas para máxima produtividade.",
-      icon: <CheckCircle2 className="text-green-600" size={24} />,
-      bgColor: "bg-green-100",
-    },
-    {
-      title: "Versionomento",
-      desc: "Gestão de código via Git/GitHub, garantindo colaboração segura.",
-      icon: <GitBranch className="text-purple-600" size={24} />,
-      bgColor: "bg-purple-100",
-    },
-  ]
+const METHODOLOGY_ITEMS = [
+  {
+    title: "Metodologia Scrum",
+    desc: "Ciclos de entrega ágil para garantir valor constante ao projeto.",
+    icon: <Users className="text-blue-600" size={24} />,
+    bgColor: "bg-blue-100",
+  },
+  {
+    title: "Brainstorming",
+    desc: "Sessões criativas em equipe para idealização e resolução de problemas.",
+    icon: <Lightbulb className="text-yellow-600" size={24} />,
+    bgColor: "bg-yellow-100",
+  },
+  {
+    title: "Divisão de Tarefas",
+    desc: "Organização estratégica de demandas para máxima produtividade.",
+    icon: <CheckCircle2 className="text-green-600" size={24} />,
+    bgColor: "bg-green-100",
+  },
+  {
+    title: "Versionamento",
+    desc: "Gestão de código via Git/GitHub, garantindo colaboração segura.",
+    icon: <GitBranch className="text-purple-600" size={24} />,
+    bgColor: "bg-purple-100",
+  },
+]
 
+export function AboutPage() {
   return (
     <div className="min-h-screen bg-[#040c25] px-6 py-16">
       <div className="mx-auto max-w-6xl">
-        {/* Header Section */}
         <header className="mb-20 text-center">
           <span className="text-sm font-bold tracking-widest text-[#244e73] uppercase">
             Generation Brasil
@@ -106,13 +104,12 @@ const AboutPage = () => {
           </p>
         </header>
 
-        {/* Methodology Section */}
         <section className="mb-24">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {methodology.map((item, index) => (
+            {METHODOLOGY_ITEMS.map((item, index) => (
               <div
                 key={index}
-                className="rounded-2xl border bg-[#051d37] p-6 shadow-sm transition-colors hover:border-indigo-300"
+                className="rounded-2xl border border-slate-700 bg-[#051d37] p-6 shadow-sm transition-colors hover:border-indigo-300"
               >
                 <div
                   className={`${item.bgColor} mb-4 flex h-12 w-12 items-center justify-center rounded-lg`}
@@ -133,10 +130,10 @@ const AboutPage = () => {
             Desenvolvedores
           </h2>
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            {team.map((member) => (
+            {TEAM_MEMBERS.map((member) => (
               <div
                 key={member.nome}
-                className="group r relative overflow-hidden rounded-3xl border-slate-100 bg-[#051d37] p-5 shadow-sm shadow-indigo-500 transition-all duration-300 hover:shadow-lg"
+                className="group relative overflow-hidden rounded-3xl border border-slate-700 bg-[#051d37] p-5 shadow-sm shadow-indigo-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/40"
               >
                 <div className="flex flex-col items-center">
                   <div className="mb-6 flex h-40 w-40 rotate-3 items-center justify-center overflow-hidden rounded-2xl bg-slate-200 transition-transform duration-300 group-hover:rotate-0">
@@ -147,23 +144,24 @@ const AboutPage = () => {
                     />
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="mb-4 flex gap-4">
                     <a
-                      target="_blank"
                       href={member.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="rounded-full bg-slate-300 p-2 text-slate-500 transition-all hover:bg-slate-100 hover:text-slate-900"
                     >
                       <Github size={20} />
                     </a>
                     <a
-                      target="_blank"
                       href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="rounded-full bg-slate-300 p-2 text-slate-500 transition-all hover:bg-blue-50 hover:text-blue-600"
                     >
-                      <LinkedinIcon size={20} />
+                      <Linkedin size={20} />
                     </a>
                     <a
-                      target="_blank"
                       href={`mailto:${member.email}`}
                       className="rounded-full bg-slate-300 p-2 text-slate-500 transition-all hover:bg-red-50 hover:text-red-500"
                     >
@@ -171,10 +169,10 @@ const AboutPage = () => {
                     </a>
                   </div>
 
-                  <h3 className="mt-2 text-xl font-bold text-slate-300">
+                  <h3 className="text-xl font-bold text-slate-300">
                     {member.nome}
                   </h3>
-                  <p className="text-sm font-semibold tracking-tight text-indigo-600 uppercase">
+                  <p className="mt-1 text-sm font-semibold tracking-tight text-indigo-400 uppercase">
                     {member.funcao}
                   </p>
                 </div>
@@ -186,5 +184,3 @@ const AboutPage = () => {
     </div>
   )
 }
-
-export default AboutPage

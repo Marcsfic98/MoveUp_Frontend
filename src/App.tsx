@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
-import Footer from "./components/footer/Footer"
-import Navbar from "./components/navbar/Navbar"
-import AboutPage from "./pages/AboutPage"
+import { Footer } from "./components/footer/Footer"
+import { Navbar } from "./components/navbar/Navbar"
+import { AboutPage } from "./pages/AboutPage"
 
-function App() {
+export function App() {
   return (
     <>
       <BrowserRouter>
@@ -17,5 +17,3 @@ function App() {
     </>
   )
 }
-
-export default App
