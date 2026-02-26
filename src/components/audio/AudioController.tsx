@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { Loader2, Pause, Play } from "lucide-react" // Removi 'Music'
+import { Loader2, Pause, Play } from "lucide-react"
 
 declare global {
   interface Window {
@@ -73,10 +73,9 @@ export function AudioController() {
     <div className="flex items-center gap-3 rounded-full border border-white/5 bg-black/20 px-3 py-1 backdrop-blur-md">
       <div id="youtube-player-hidden" className="hidden"></div>
 
-      {/* Visualizador de Áudio */}
-      {/* gap-[2px] virou gap-0.5 */}
+     
       <div className="flex h-4 w-6 items-end gap-0.5">
-        {/* animate-[bounce_1s_infinite] virou animate-bounce (que já é 1s) */}
+        
         <div
           className={`w-1.5 rounded-t bg-[#00affa] transition-all duration-300 ${isPlaying ? "h-3 animate-bounce" : "h-1"}`}
         ></div>
