@@ -3,15 +3,20 @@ import "./App.css"
 import { Footer } from "./components/footer/Footer"
 import { Navbar } from "./components/navbar/Navbar"
 import { AboutPage } from "./pages/AboutPage"
+import { Home } from "./pages/Home"
 
 export function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
+        <div className="min-h-[80vh]">
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </>
