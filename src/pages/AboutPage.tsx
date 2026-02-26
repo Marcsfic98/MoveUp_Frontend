@@ -1,64 +1,6 @@
-import {
-  CheckCircle2,
-  GitBranch,
-  Github,
-  Lightbulb,
-  Linkedin,
-  Mail,
-  Users,
-} from "lucide-react"
-
-const TEAM_MEMBERS = [
-  {
-    nome: "Marcos Alexandre",
-    funcao: "Fullstack Developer",
-    img: "/img/members/marcos.jpeg",
-    linkedin: "https://www.linkedin.com/in/marcsfic/",
-    github: "https://github.com/Marcsfic98",
-    email: "marcsfic98@gmail.com",
-  },
-  {
-    nome: "Matheus Carvalho",
-    funcao: "Fullstack Developer",
-    img: "/img/members/matheusc.jpeg",
-    linkedin: "https://www.linkedin.com/in/mcarvalho-dev/",
-    github: "https://github.com/mc4rvalho",
-    email: "mcarvalho093@gmail.com",
-  },
-  {
-    nome: "Matheus Lins",
-    funcao: "Fullstack Developer",
-    img: "/img/members/lins.jpeg",
-    linkedin:
-      "https://www.linkedin.com/in/matheus-antonio-santos-lins-091946217",
-    github: "https://github.com/Matheus-Lins",
-    email: "matheusantonioslins@outlook.com",
-  },
-  {
-    nome: "Allyson Gonçalves",
-    funcao: "Fullstack Developer",
-    img: "/img/members/allyson.jpeg",
-    linkedin: "https://www.linkedin.com/in/allysongon%C3%A7alves/",
-    github: "https://github.com/allysonaggp",
-    email: "allysonaggp@gmail.com",
-  },
-  {
-    nome: "Juliermes Mendes",
-    funcao: "Fullstack Developer",
-    img: "/img/members/ju.jpeg",
-    linkedin: "https://www.linkedin.com/in/juliermes/",
-    github: "https://github.com/juliomendes160",
-    email: "juliomendes160@hotmail.com",
-  },
-  {
-    nome: "Alexandre Julio",
-    funcao: "Fullstack Developer",
-    img: "/img/members/alexandre.png",
-    linkedin: "https://www.linkedin.com/in/alexandre-julio-0b007a211/",
-    github: "https://github.com/AlexandreJulioDev",
-    email: "alexandre.julio8772@gmail.com",
-  },
-]
+import { CheckCircle2, GitBranch, Lightbulb, Users } from "lucide-react"
+import { Link } from "react-router-dom"
+import { TEAM_MEMBERS } from "../data/team"
 
 const METHODOLOGY_ITEMS = [
   {
@@ -143,59 +85,35 @@ export function AboutPage() {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {TEAM_MEMBERS.map((member) => (
-              <div
-                key={member.nome}
-                className="group relative overflow-hidden rounded-3xl border border-slate-700 bg-[#051d37] p-6 transition-all duration-300 hover:border-[#00affa]/50 hover:shadow-[0_0_30px_rgba(0,175,250,0.15)]"
+              <Link
+                key={member.slug}
+                to={`/member/${member.slug}`}
+                className="group relative block h-full cursor-pointer"
               >
-                
-                <div className="absolute inset-0 bg-linear-to-b from-[#00affa]/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                <div className="relative h-full overflow-hidden rounded-3xl border border-slate-700 bg-[#051d37] p-6 transition-all duration-300 hover:border-[#00affa]/50 hover:shadow-[0_0_30px_rgba(0,175,250,0.15)]">
+                  <div className="absolute inset-0 bg-linear-to-b from-[#00affa]/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 
-                <div className="relative z-10 flex flex-col items-center">
-                  
-                  <div className="mb-6 h-40 w-40 overflow-hidden rounded-full border-4 border-[#0d1017] shadow-xl ring-2 ring-slate-700 transition-all duration-300 group-hover:scale-105 group-hover:ring-[#00affa]">
-                    <img
-                      src={member.img}
-                      alt={member.nome}
-                      className="h-full w-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
-                    />
-                  </div>
+                  <div className="relative z-10 flex flex-col items-center">
+                    <div className="mb-6 h-40 w-40 overflow-hidden rounded-full border-4 border-[#0d1017] shadow-xl ring-2 ring-slate-700 transition-all duration-300 group-hover:scale-105 group-hover:ring-[#00affa]">
+                      <img
+                        src={member.img}
+                        alt={member.nome}
+                        className="h-full w-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
+                      />
+                    </div>
 
-                  <h3 className="text-xl font-bold text-white transition-colors group-hover:text-[#00affa]">
-                    {member.nome}
-                  </h3>
-                  <p className="mb-6 text-sm font-medium tracking-wide text-slate-400 uppercase">
-                    {member.funcao}
-                  </p>
-
-                  <div className="flex gap-3">
-                    <a
-                      href={member.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0d1017] text-slate-400 transition-all hover:-translate-y-1 hover:bg-slate-700 hover:text-white"
-                      title="GitHub"
-                    >
-                      <Github size={20} />
-                    </a>
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0d1017] text-slate-400 transition-all hover:-translate-y-1 hover:bg-[#0077b5] hover:text-white"
-                      title="LinkedIn"
-                    >
-                      <Linkedin size={20} />
-                    </a>
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0d1017] text-slate-400 transition-all hover:-translate-y-1 hover:bg-red-500 hover:text-white"
-                      title="Email"
-                    >
-                      <Mail size={20} />
-                    </a>
+                    <h3 className="text-xl font-bold text-white transition-colors group-hover:text-[#00affa]">
+                      {member.nome}
+                    </h3>
+                    <p className="mb-2 text-sm font-medium tracking-wide text-slate-400 uppercase">
+                      {member.funcao}
+                    </p>
+                    <span className="text-xs font-semibold text-[#00affa] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      Ver Perfil Completo →
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
