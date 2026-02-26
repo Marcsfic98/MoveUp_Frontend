@@ -40,7 +40,7 @@ export function Home() {
                   Conheça a Tecnologia
                 </Link>
                 <Link
-                  to="/contatos"
+                  to="/contact"
                   className="group flex items-center gap-2 text-sm leading-6 font-semibold text-white"
                 >
                   Fale com o time{" "}
@@ -240,7 +240,7 @@ export function Home() {
               </p>
               <div className="mt-6 flex max-w-md gap-x-4">
                 <Link
-                  to="/contatos"
+                  to="/contact"
                   className="flex items-center gap-2 rounded-md border border-[#0d1017] px-3.5 py-2.5 text-sm font-bold text-[#0d1017] transition-colors hover:bg-[#0d1017] hover:text-white"
                 >
                   <Layout size={18} />

@@ -22,7 +22,7 @@ export function MemberPage() {
     <div className="min-h-screen bg-[#040c25] pb-20 font-sans text-slate-300 selection:bg-[#00affa] selection:text-[#0d1017]">
       <div className={`h-48 w-full ${member.banner} relative overflow-hidden`}>
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#040c25] to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-[#040c25] to-transparent"></div>
 
         <div className="absolute top-6 left-6 z-10">
           <Link
