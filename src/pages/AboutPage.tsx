@@ -64,39 +64,42 @@ const METHODOLOGY_ITEMS = [
   {
     title: "Metodologia Scrum",
     desc: "Ciclos de entrega ágil para garantir valor constante ao projeto.",
-    icon: <Users className="text-blue-600" size={24} />,
-    bgColor: "bg-blue-100",
+    icon: <Users className="text-[#00affa]" size={24} />,
+    borderColor: "hover:border-[#00affa]",
   },
   {
     title: "Brainstorming",
     desc: "Sessões criativas em equipe para idealização e resolução de problemas.",
-    icon: <Lightbulb className="text-yellow-600" size={24} />,
-    bgColor: "bg-yellow-100",
+    icon: <Lightbulb className="text-yellow-400" size={24} />,
+    borderColor: "hover:border-yellow-400",
   },
   {
     title: "Divisão de Tarefas",
     desc: "Organização estratégica de demandas para máxima produtividade.",
-    icon: <CheckCircle2 className="text-green-600" size={24} />,
-    bgColor: "bg-green-100",
+    icon: <CheckCircle2 className="text-green-400" size={24} />,
+    borderColor: "hover:border-green-400",
   },
   {
     title: "Versionamento",
     desc: "Gestão de código via Git/GitHub, garantindo colaboração segura.",
-    icon: <GitBranch className="text-purple-600" size={24} />,
-    bgColor: "bg-purple-100",
+    icon: <GitBranch className="text-purple-400" size={24} />,
+    borderColor: "hover:border-purple-400",
   },
 ]
 
 export function AboutPage() {
   return (
-    <div className="min-h-screen bg-[#040c25] px-6 py-16">
-      <div className="mx-auto max-w-6xl">
-        <header className="mb-20 text-center">
-          <span className="text-sm font-bold tracking-widest text-[#244e73] uppercase">
+    <div className="min-h-screen bg-[#040c25] px-6 py-20 font-sans text-slate-300 selection:bg-[#00affa] selection:text-[#0d1017]">
+      <div className="mx-auto max-w-7xl">
+        <header className="mb-24 text-center">
+          <div className="mb-6 inline-flex items-center rounded-full border border-[#00affa]/30 bg-[#00affa]/10 px-3 py-1 text-sm font-medium text-[#00affa]">
             Generation Brasil
-          </span>
-          <h1 className="mt-2 mb-6 text-5xl font-black text-[#00affa]">
-            GRUPO 2
+          </div>
+          <h1 className="mb-6 text-5xl font-black text-white sm:text-6xl">
+            Quem constrói o <br />
+            <span className="bg-linear-to-r from-[#00affa] to-purple-500 bg-clip-text text-transparent">
+              Futuro do MoveUp
+            </span>
           </h1>
           <p className="mx-auto max-w-2xl text-xl leading-relaxed text-slate-400">
             Unimos tecnologia e processos ágeis para desenvolver uma aplicação
@@ -104,19 +107,22 @@ export function AboutPage() {
           </p>
         </header>
 
-        <section className="mb-24">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <section className="mb-32">
+          <div className="mb-12 text-center">
+            <h2 className="text-2xl font-bold text-white">Nosso Processo</h2>
+          </div>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {METHODOLOGY_ITEMS.map((item, index) => (
               <div
                 key={index}
-                className="rounded-2xl border border-slate-700 bg-[#051d37] p-6 shadow-sm transition-colors hover:border-indigo-300"
+                className={`group rounded-2xl border border-slate-700 bg-[#051d37] p-6 shadow-lg transition-all duration-300 ${item.borderColor} hover:-translate-y-1 hover:shadow-xl`}
               >
-                <div
-                  className={`${item.bgColor} mb-4 flex h-12 w-12 items-center justify-center rounded-lg`}
-                >
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#0d1017] shadow-inner">
                   {item.icon}
                 </div>
-                <h3 className="mb-2 font-bold text-slate-200">{item.title}</h3>
+                <h3 className="mb-2 font-bold text-white group-hover:text-white">
+                  {item.title}
+                </h3>
                 <p className="text-sm leading-snug text-slate-400">
                   {item.desc}
                 </p>
@@ -126,30 +132,48 @@ export function AboutPage() {
         </section>
 
         <section>
-          <h2 className="mb-12 text-center text-3xl font-bold text-slate-300">
-            Desenvolvedores
-          </h2>
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mb-16 text-center">
+            <h2 className="text-3xl font-black text-white sm:text-4xl">
+              Dream Team
+            </h2>
+            <p className="mt-4 text-slate-400">
+              Conheça os desenvolvedores por trás do código
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {TEAM_MEMBERS.map((member) => (
               <div
                 key={member.nome}
-                className="group relative overflow-hidden rounded-3xl border border-slate-700 bg-[#051d37] p-5 shadow-sm shadow-indigo-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/40"
+                className="group relative overflow-hidden rounded-3xl border border-slate-700 bg-[#051d37] p-6 transition-all duration-300 hover:border-[#00affa]/50 hover:shadow-[0_0_30px_rgba(0,175,250,0.15)]"
               >
-                <div className="flex flex-col items-center">
-                  <div className="mb-6 flex h-40 w-40 rotate-3 items-center justify-center overflow-hidden rounded-2xl bg-slate-200 transition-transform duration-300 group-hover:rotate-0">
+                
+                <div className="absolute inset-0 bg-linear-to-b from-[#00affa]/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+
+                <div className="relative z-10 flex flex-col items-center">
+                  
+                  <div className="mb-6 h-40 w-40 overflow-hidden rounded-full border-4 border-[#0d1017] shadow-xl ring-2 ring-slate-700 transition-all duration-300 group-hover:scale-105 group-hover:ring-[#00affa]">
                     <img
                       src={member.img}
                       alt={member.nome}
-                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      className="h-full w-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
                     />
                   </div>
 
-                  <div className="mb-4 flex gap-4">
+                  <h3 className="text-xl font-bold text-white transition-colors group-hover:text-[#00affa]">
+                    {member.nome}
+                  </h3>
+                  <p className="mb-6 text-sm font-medium tracking-wide text-slate-400 uppercase">
+                    {member.funcao}
+                  </p>
+
+                  <div className="flex gap-3">
                     <a
                       href={member.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full bg-slate-300 p-2 text-slate-500 transition-all hover:bg-slate-100 hover:text-slate-900"
+                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0d1017] text-slate-400 transition-all hover:-translate-y-1 hover:bg-slate-700 hover:text-white"
+                      title="GitHub"
                     >
                       <Github size={20} />
                     </a>
@@ -157,24 +181,19 @@ export function AboutPage() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full bg-slate-300 p-2 text-slate-500 transition-all hover:bg-blue-50 hover:text-blue-600"
+                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0d1017] text-slate-400 transition-all hover:-translate-y-1 hover:bg-[#0077b5] hover:text-white"
+                      title="LinkedIn"
                     >
                       <Linkedin size={20} />
                     </a>
                     <a
                       href={`mailto:${member.email}`}
-                      className="rounded-full bg-slate-300 p-2 text-slate-500 transition-all hover:bg-red-50 hover:text-red-500"
+                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0d1017] text-slate-400 transition-all hover:-translate-y-1 hover:bg-red-500 hover:text-white"
+                      title="Email"
                     >
                       <Mail size={20} />
                     </a>
                   </div>
-
-                  <h3 className="text-xl font-bold text-slate-300">
-                    {member.nome}
-                  </h3>
-                  <p className="mt-1 text-sm font-semibold tracking-tight text-indigo-400 uppercase">
-                    {member.funcao}
-                  </p>
                 </div>
               </div>
             ))}
