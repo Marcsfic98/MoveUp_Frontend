@@ -268,7 +268,7 @@ export function Home() {
               <div className="mt-6 flex max-w-md gap-x-4">
                 <Link
                   to="/contact"
-                  className="flex items-center gap-2 rounded-md border border-[#0d1017] px-3.5 py-2.5 text-sm font-bold text-[#0d1017] transition-colors hover:bg-[#0d1017] hover:text-white"
+                  className="flex items-center gap-2 rounded-md bg-[#0d1017] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0d1017]/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                 >
                   <Layout size={18} />
                   Fale Conosco
