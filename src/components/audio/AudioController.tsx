@@ -45,8 +45,10 @@ export function AudioController() {
           playlist: "FGBhQbmPwH8",
         },
         events: {
-          onReady: () => {
+          onReady: (event: any) => {
             setIsApiReady(true)
+
+            event.target.setVolume(8)
           },
 
           onStateChange: (event: any) => {
