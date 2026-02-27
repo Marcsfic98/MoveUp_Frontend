@@ -78,7 +78,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "Bootcamp Fullstack JavaScript - Generation Brasil (Nov/2025 - Mar/2026)",
     ],
   },
-   {
+  {
     slug: "matheus-lins",
     nome: "Matheus Lins",
     funcao: "Fullstack Developer",
@@ -109,7 +109,19 @@ export const TEAM_MEMBERS: TeamMember[] = [
     bio: "Ex militar, especialista em vendas e Desenvolvedor FullStack .",
     about:
       "  Ola me chamo Allyson Gonçalves Sou Desenvolvedor FullStack com experiência prévia em liderança e gestão, atualmente cursando Análise e Desenvolvimento de Software e participando do bootcamp intensivo da Generation Brasil. Tenho sólida base em JavaScript, TypeScript, Python e Lógica de programação e Banco de dados. Minha trajetória une disciplina adquirida na Força Aérea Brasileira e experiência comercial com tecnologia, buscando contribuir para soluções inovadoras e eficientes",
-    skills: ["TypeScript","Pyhon","React","Tailwind","Nest","Postegres","MySQL","Arquitetura MVC", "API REST", "Git", "Debug"],
+    skills: [
+      "TypeScript",
+      "Pyhon",
+      "React",
+      "Tailwind",
+      "Nest",
+      "Postegres",
+      "MySQL",
+      "Arquitetura MVC",
+      "API REST",
+      "Git",
+      "Debug",
+    ],
     education: [
       "Engenharia de Software (Em andamento)",
       "Bootcamp Fullstack Java - Generation Brasil (2025)",
@@ -124,12 +136,22 @@ export const TEAM_MEMBERS: TeamMember[] = [
     github: "https://github.com/juliomendes160",
     email: "juliomendes160@hotmail.com",
     banner: "bg-gradient-to-r from-yellow-900 to-slate-900",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.",
+    bio: "Desenvolvedor de Software, apaixonado por tecnologia e boas práticas de código.",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.",
-    skills: ["Java", "Spring Boot", "Segurança", "SQL"],
+      "Sou um profissional da área de Tecnologia da Informação, com experiência em desenvolvimento e suporte de sistemas, atuando na área desde 2021 até 2025. Tenho conhecimento em desenvolvimento web, criação de APIs e trabalho com bancos de dados, sempre aplicando boas práticas e buscando escrever código organizado, eficiente e de fácil manutenção. Minha trajetória na tecnologia começou em 2021, por meio do curso técnico em Informática, onde adquiri base em programação, redes e manutenção de computadores. Atualmente, curso Licenciatura em Computação pela UFRPE e sigo em constante aprendizado. Também estou realizando um curso na Generation Brasil, com foco em desenvolvimento Full Stack, utilizando React no frontend e NestJS no backend.",
+    skills: [
+      "Typescript",
+      "Next",
+      "React",
+      "TailwindCSS",
+      "Node.js",
+      "NestJS",
+      "TypeORM",
+      "JWT",
+      "MySQL",
+    ],
     education: [
-      "Ciência da Computação (Em andamento)",
+      "Licenciatura em Computação - UFRPE (2022.2 - 2026.1)",
       "Bootcamp Fullstack Java - Generation Brasil (2025)",
     ],
   },
