@@ -115,19 +115,32 @@ export function Footer() {
                 </span>
               </div>
             </div>
+            {/* Pagamento */}
             <div className="mt-6">
               <h3 className="mb-2 text-xs font-bold tracking-wider text-blue-600 uppercase">
                 Pagamento
               </h3>
               <div className="flex gap-2 opacity-70 transition hover:opacity-100">
                 <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
-                  VISA
+                  <img
+                    className="w-10"
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/d589be70-eb86-11e9-b9a8-097ac027487d-l.svg"
+                    alt="card visa"
+                  />
                 </div>
                 <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
-                  MASTER
+                  <img
+                    className="w-9"
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/9cf818e0-723a-11f0-a459-cf21d0937aeb-l.svg"
+                    alt="card master"
+                  />
                 </div>
                 <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
-                  PIX
+                  <img
+                    className="w-11"
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/f99fcca0-f3bd-11eb-9984-b7076edb0bb7-l.svg"
+                    alt="pix"
+                  />
                 </div>
               </div>
             </div>
