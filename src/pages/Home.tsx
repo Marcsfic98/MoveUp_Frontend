@@ -50,9 +50,9 @@ export function Home() {
                 buscam escalabilidade, organização e segurança na gestão de
                 alunos.
               </p>
-              <div className="flex items-center gap-x-6">
+              <div className="flex flex-col items-center gap-6 md:flex-row">
                 <Link
-                  to="/about"
+                  to="/tech"
                   className="rounded-lg bg-[#00affa] px-6 py-3 text-sm font-bold text-[#040c25] shadow-[0_0_20px_rgba(0,175,250,0.3)] transition-transform hover:scale-105 hover:bg-[#33bfff]"
                 >
                   Conheça a Tecnologia
@@ -88,7 +88,7 @@ export function Home() {
                 ))}
               </div>
 
-              <div className="absolute -bottom-10 -left-6 z-20 hidden rounded-xl border border-slate-700 bg-[#0d1017]/95 p-4 shadow-xl backdrop-blur-sm md:block">
+              <div className="absolute -bottom-10 -left-6 z-20 hidden rounded-xl border border-slate-700 bg-[#0d1017]/95 p-4 shadow-xl backdrop-blur-sm select-none md:block">
                 <div className="mb-2 flex items-center gap-2 border-b border-slate-700 pb-2">
                   <Terminal size={16} className="text-[#00affa]" />
                   <span className="font-mono text-xs text-slate-400">
@@ -246,7 +246,7 @@ export function Home() {
                 desenvolvedores Fullstack apaixonados por resolver problemas
                 reais com código limpo.
               </p>
-              <div className="mt-6 flex max-w-md gap-x-4">
+              <div className="mt-6 flex max-w-md justify-center gap-x-4 md:justify-start">
                 <Link
                   to="/about"
                   className="flex items-center gap-2 rounded-md bg-[#0d1017] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0d1017]/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
@@ -257,7 +257,7 @@ export function Home() {
               </div>
             </div>
 
-            <div className="max-w-xl border-l border-[#0d1017]/20 pl-0 lg:max-w-lg lg:pl-10">
+            <div className="max-w-xl justify-center border-l border-[#0d1017]/20 pl-0 md:justify-start lg:max-w-lg lg:pl-10">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Vamos construir juntos?
               </h2>
@@ -265,7 +265,7 @@ export function Home() {
                 Tem dúvidas sobre a implementação ou quer contribuir com o
                 projeto open-source? Entre em contato agora mesmo.
               </p>
-              <div className="mt-6 flex max-w-md gap-x-4">
+              <div className="mt-6 flex max-w-md justify-center gap-x-4 md:justify-start">
                 <Link
                   to="/contact"
                   className="flex items-center gap-2 rounded-md bg-[#0d1017] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0d1017]/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"

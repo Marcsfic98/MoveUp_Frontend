@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Loader2, Pause, Play } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 declare global {
   interface Window {
     onYouTubeIframeAPIReady: () => void
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     YT: any
   }
 }
@@ -12,7 +13,7 @@ declare global {
 export function AudioController() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isApiReady, setIsApiReady] = useState(false)
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   const playerRef = useRef<any>(null)
 
   useEffect(() => {
@@ -37,22 +38,19 @@ export function AudioController() {
         width: "0",
         videoId: "FGBhQbmPwH8",
         playerVars: {
-          autoplay: 1,
+          autoplay: 0,
           controls: 0,
           start: 5,
           loop: 1,
           playlist: "FGBhQbmPwH8",
         },
         events: {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           onReady: (event: any) => {
             setIsApiReady(true)
 
-            setTimeout(() => {
-              event.target.playVideo()
-            }, 2000)
+            event.target.setVolume(8)
           },
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
           onStateChange: (event: any) => {
             if (event.data === 1) setIsPlaying(true)
             else setIsPlaying(false)
