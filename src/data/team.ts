@@ -1,4 +1,3 @@
-
 export interface TeamMember {
   slug: string
   nome: string
@@ -26,14 +25,26 @@ export const TEAM_MEMBERS: TeamMember[] = [
     banner: "bg-gradient-to-r from-blue-900 to-slate-900",
     bio: "Desenvolvedor FullStack & Mobile apaixonado por performance e Clean Code. Focado em criar experiências digitais impactantes",
     about:
-      "Do pacote de rede ao código escalável: Desenvolvedor Full Stack apaixonado por arquitetura e performance.<br/>Com uma base sólida construída na infraestrutura de redes, transicionei para a Engenharia de Software trazendo uma visão que poucos desenvolvedores possuem: o entendimento real de como o dado trafega, da camada física à interface final.<br/>Atualmente, curso Análise e Desenvolvimento de Sistemas e lidero tecnicamente o projeto Serviços Já, selecionado para a pré-incubação na Incubadora I.de.i.as (Senac). Minha missão é transformar requisitos complexos em produtos digitais que resolvem dores reais de mercado."
-,
-  skills: ["Typescript","Next","React","React Native","expo", "Node.js","Nest","Prisma","TypeORM","JWT", "MySQL", "Scrum"],
+      "Do pacote de rede ao código escalável: Desenvolvedor Full Stack apaixonado por arquitetura e performance. Com uma base sólida construída na infraestrutura de redes, transicionei para a Engenharia de Software trazendo uma visão que poucos desenvolvedores possuem: o entendimento real de como o dado trafega, da camada física à interface final. Atualmente, curso Análise e Desenvolvimento de Sistemas e lidero tecnicamente o projeto Serviços Já, selecionado para a pré-incubação na Incubadora I.de.i.as (Senac). Minha missão é transformar requisitos complexos em produtos digitais que resolvem dores reais de mercado.",
+    skills: [
+      "Typescript",
+      "Next",
+      "React",
+      "React Native",
+      "expo",
+      "Node.js",
+      "NestJS",
+      "Prisma",
+      "TypeORM",
+      "JWT",
+      "MySQL",
+      "Scrum",
+    ],
     education: [
       "Análise e Desenvolvimento de Sistemas - Mauricio De Nassau(2025 - Atual)",
       "Bootcamp Fullstack JavaScript - Generation Brasil (2025)",
       "Bootcamp Fullstack JavaScript - Atlântico Avanti (2025)",
-      "Bootcamp Mobile Developer - MeuTudo (2024)"
+      "Bootcamp Mobile Developer - MeuTudo (2024)",
     ],
   },
   {
@@ -45,13 +56,26 @@ export const TEAM_MEMBERS: TeamMember[] = [
     github: "https://github.com/mc4rvalho",
     email: "mcarvalho093@gmail.com",
     banner: "bg-gradient-to-r from-[#00affa]/40 to-purple-900",
-    bio: "Desenvolvedor apaixonado por performance e Clean Code. Focado em criar experiências digitais impactantes.",
+    bio: "De ex-vendedor a Desenvolvedor Full Stack: unindo comunicação estratégica com código limpo e performático.",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisi eget libero vulputate dignissim. Curabitur viverra egestas erat, vitae dapibus nisi rhoncus vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer fringilla, diam eget consectetur bibendum, felis metus pellentesque ex, vel scelerisque dui leo ut nisi.",
-    skills: ["NestJS", "TypeScript", "TailwindCSS", "PostgreSQL"],
+      "Minha jornada começou na área comercial, onde aprendi a ouvir clientes e negociar soluções. Hoje, uso essa bagagem para desenvolver softwares que resolvem problemas reais. Apaixonado pelo ecossistema JavaScript, tenho foco especial em arquitetura de Back-end com NestJS e interfaces responsivas com React. No MoveUp, busquei aplicar Clean Code e escalabilidade. Fora dos códigos, sou atleta de Futebol de Mesa pelo Sport Recife, onde exercito a disciplina e o pensamento estratégico.",
+    skills: [
+      "PostgreSQL",
+      "MySQL",
+      "Prisma",
+      "TypeORM",
+      "Java",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "TailwindCSS",
+    ],
     education: [
-      "Análise e Desenvolvimento de Sistemas - Mauricio De Nassau(2025 - Atual)",
-      "Bootcamp Fullstack JavaScript - Generation Brasil (2025)",
+      "Análise e Desenvolvimento de Sistemas - Faculdade Católica Imaculada Conceição do Recife - FICR (Ago/2024 - Dez/2026)",
+      "Bootcamp Fullstack JavaScript - Atlântico Avanti (Fev/2026 - Jan/2026)",
+      "Bootcamp Fullstack JavaScript - Generation Brasil (Nov/2025 - Mar/2026)"
     ],
   },
   {

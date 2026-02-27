@@ -16,7 +16,6 @@ export function AudioController() {
   const playerRef = useRef<any>(null)
 
   useEffect(() => {
-    // 1. Carrega a API do YouTube se não existir
     if (!window.YT) {
       const tag = document.createElement("script")
       tag.src = "https://www.youtube.com/iframe_api"
@@ -42,22 +41,19 @@ export function AudioController() {
           controls: 0,
           start: 5,
           loop: 1,
-          playlist: "FGBhQbmPwH8", // Necessário para o loop funcionar
+          playlist: "FGBhQbmPwH8",
         },
         events: {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           onReady: (event: any) => {
             setIsApiReady(true)
 
-            // --- LÓGICA DE 5 SEGUNDOS ---
             setTimeout(() => {
-              // Tenta dar o play após 5 segundos
               event.target.playVideo()
             }, 2000)
           },
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           onStateChange: (event: any) => {
-            // event.data === 1 significa "Playing"
             if (event.data === 1) setIsPlaying(true)
             else setIsPlaying(false)
           },
@@ -78,10 +74,8 @@ export function AudioController() {
 
   return (
     <div className="flex items-center gap-3 rounded-full border border-white/5 bg-black/20 px-3 py-1 backdrop-blur-md">
-      {/* Container do player (invisível) */}
       <div id="youtube-player-hidden" className="hidden"></div>
 
-      {/* Visualizer de Barras */}
       <div className="flex h-4 w-6 items-end gap-0.5">
         <div
           className={`w-1.5 rounded-t bg-[#00affa] transition-all duration-300 ${
@@ -100,7 +94,6 @@ export function AudioController() {
         ></div>
       </div>
 
-      {/* Botão de Controle */}
       <button
         onClick={toggle}
         disabled={!isApiReady}

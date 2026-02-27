@@ -11,7 +11,6 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 export function Home() {
-  // Lógica do Banner
   const [currentImage, setCurrentImage] = useState(0)
   const images = [
     "/img/banner/b1.png",
@@ -24,7 +23,7 @@ export function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length)
-    }, 7000) // Troca a cada 4 segundos
+    }, 7000)
 
     return () => clearInterval(timer)
   }, [images.length])
@@ -73,7 +72,6 @@ export function Home() {
               </div>
             </div>
 
-            {/* SEÇÃO DO BANNER COM CARROSSEL */}
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-linear-to-r from-[#00affa] to-purple-600 opacity-30 blur-2xl"></div>
 
@@ -90,7 +88,6 @@ export function Home() {
                 ))}
               </div>
 
-              {/* Floating Code UI */}
               <div className="absolute -bottom-10 -left-6 z-20 hidden rounded-xl border border-slate-700 bg-[#0d1017]/95 p-4 shadow-xl backdrop-blur-sm md:block">
                 <div className="mb-2 flex items-center gap-2 border-b border-slate-700 pb-2">
                   <Terminal size={16} className="text-[#00affa]" />
