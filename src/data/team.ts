@@ -75,7 +75,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     education: [
       "Análise e Desenvolvimento de Sistemas - Faculdade Católica Imaculada Conceição do Recife - FICR (Ago/2024 - Dez/2026)",
       "Bootcamp Fullstack JavaScript - Atlântico Avanti (Fev/2026 - Jan/2026)",
-      "Bootcamp Fullstack JavaScript - Generation Brasil (Nov/2025 - Mar/2026)"
+      "Bootcamp Fullstack JavaScript - Generation Brasil (Nov/2025 - Mar/2026)",
     ],
   },
   {
@@ -106,10 +106,10 @@ export const TEAM_MEMBERS: TeamMember[] = [
     github: "https://github.com/allysonaggp",
     email: "allysonaggp@gmail.com",
     banner: "bg-gradient-to-r from-red-900 to-slate-900",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.",
+    bio: "Ex militar, especialista em vendas e Desenvolvedor FullStack .",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.",
-    skills: ["JavaScript", "API REST", "Git", "Debug"],
+      "  Ola me chamo Allyson Gonçalves Sou Desenvolvedor FullStack com experiência prévia em liderança e gestão, atualmente cursando Análise e Desenvolvimento de Software e participando do bootcamp intensivo da Generation Brasil. Tenho sólida base em JavaScript, TypeScript, Python e Lógica de programação e Banco de dados. Minha trajetória une disciplina adquirida na Força Aérea Brasileira e experiência comercial com tecnologia, buscando contribuir para soluções inovadoras e eficientes",
+    skills: ["TypeScript","React","Tailwind","Nest","Postegres","MySQL","Arquitetura MVC", "API REST", "Git", "Debug"],
     education: [
       "Engenharia de Software (Em andamento)",
       "Bootcamp Fullstack Java - Generation Brasil (2025)",
