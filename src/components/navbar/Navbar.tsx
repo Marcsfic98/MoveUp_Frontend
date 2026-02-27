@@ -76,16 +76,25 @@ export function Navbar() {
             <Link
               to="/home"
               onClick={() => setIsOpen(false)}
-              className="hover:text-[#00affa]"
+              className="text-[#00affa]"
             >
               Home
             </Link>
           </li>
           <li>
             <Link
+              to="/tech"
+              onClick={() => setIsOpen(false)}
+              className="text-[#00affa]"
+            >
+              Tecnologias
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="hover:text-[#00affa]"
+              className="text-[#00affa]"
             >
               Contato
             </Link>
@@ -94,7 +103,7 @@ export function Navbar() {
             <Link
               to="/about"
               onClick={() => setIsOpen(false)}
-              className="hover:text-[#00affa]"
+              className="text-[#00affa]"
             >
               Sobre
             </Link>
