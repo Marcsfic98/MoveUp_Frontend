@@ -11,7 +11,6 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 export function Home() {
-  // Lógica do Banner
   const [currentImage, setCurrentImage] = useState(0)
   const images = [
     "/img/banner/b1.png",
@@ -73,7 +72,6 @@ export function Home() {
               </div>
             </div>
 
-            {/* SEÇÃO DO BANNER COM CARROSSEL */}
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-linear-to-r from-[#00affa] to-purple-600 opacity-30 blur-2xl"></div>
 
