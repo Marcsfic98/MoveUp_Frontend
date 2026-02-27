@@ -109,7 +109,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     bio: "Ex militar, especialista em vendas e Desenvolvedor FullStack .",
     about:
       "  Ola me chamo Allyson Gonçalves Sou Desenvolvedor FullStack com experiência prévia em liderança e gestão, atualmente cursando Análise e Desenvolvimento de Software e participando do bootcamp intensivo da Generation Brasil. Tenho sólida base em JavaScript, TypeScript, Python e Lógica de programação e Banco de dados. Minha trajetória une disciplina adquirida na Força Aérea Brasileira e experiência comercial com tecnologia, buscando contribuir para soluções inovadoras e eficientes",
-    skills: ["TypeScript","React","Tailwind","Nest","Postegres","MySQL","Arquitetura MVC", "API REST", "Git", "Debug"],
+    skills: ["TypeScript","Pyhon","React","Tailwind","Nest","Postegres","MySQL","Arquitetura MVC", "API REST", "Git", "Debug"],
     education: [
       "Engenharia de Software (Em andamento)",
       "Bootcamp Fullstack Java - Generation Brasil (2025)",
