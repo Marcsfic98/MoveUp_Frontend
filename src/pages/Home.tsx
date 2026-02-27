@@ -57,7 +57,7 @@ export function Home() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-linear-to-r from-[#00affa] to-purple-600 opacity-30 blur-2xl"></div>
               <img
-                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop"
+                src="/img/banner.png"
                 alt="Academia moderna com luzes neon"
                 className="relative h-100 w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10"
               />
