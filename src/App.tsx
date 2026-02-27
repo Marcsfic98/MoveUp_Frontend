@@ -7,6 +7,7 @@ import { Home } from "./pages/Home"
 import { ContactPage } from "./pages/ContactPage"
 import { MemberPage } from "./pages/MemberPage"
 import { ScrollToTop } from "./components/ScrollToTop"
+import { TechPage } from "./pages/TechPages"
 
 export function App() {
   return (
@@ -18,9 +19,10 @@ export function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/tech" element={<TechPage />} />
             <Route path="/member/:slug" element={<MemberPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </div>
         <Footer />

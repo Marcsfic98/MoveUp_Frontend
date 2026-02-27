@@ -52,7 +52,7 @@ export function Home() {
               </p>
               <div className="flex flex-col items-center gap-6 md:flex-row">
                 <Link
-                  to="/about"
+                  to="/tech"
                   className="rounded-lg bg-[#00affa] px-6 py-3 text-sm font-bold text-[#040c25] shadow-[0_0_20px_rgba(0,175,250,0.3)] transition-transform hover:scale-105 hover:bg-[#33bfff]"
                 >
                   Conheça a Tecnologia
@@ -88,7 +88,7 @@ export function Home() {
                 ))}
               </div>
 
-              <div className="absolute -bottom-10 -left-6 z-20 hidden rounded-xl border border-slate-700 bg-[#0d1017]/95 p-4 shadow-xl backdrop-blur-sm md:block">
+              <div className="absolute -bottom-10 -left-6 z-20 hidden rounded-xl border border-slate-700 bg-[#0d1017]/95 p-4 shadow-xl backdrop-blur-sm select-none md:block">
                 <div className="mb-2 flex items-center gap-2 border-b border-slate-700 pb-2">
                   <Terminal size={16} className="text-[#00affa]" />
                   <span className="font-mono text-xs text-slate-400">
