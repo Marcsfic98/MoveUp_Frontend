@@ -7,9 +7,28 @@ import {
   Server,
   Terminal,
 } from "lucide-react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 export function Home() {
+  // Lógica do Banner
+  const [currentImage, setCurrentImage] = useState(0)
+  const images = [
+    "/img/banner/b1.png",
+    "/img/banner/b2.png",
+    "/img/banner/b3.png",
+    "/img/banner/b4.png",
+    "/img/banner/b5.png",
+  ]
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length)
+    }, 7000) // Troca a cada 4 segundos
+
+    return () => clearInterval(timer)
+  }, [images.length])
+
   return (
     <div className="min-h-screen bg-[#040c25] font-sans text-slate-300 selection:bg-[#00affa] selection:text-[#0d1017]">
       <section className="relative overflow-hidden pt-20 pb-32 lg:pt-32">
@@ -54,14 +73,25 @@ export function Home() {
               </div>
             </div>
 
+            {/* SEÇÃO DO BANNER COM CARROSSEL */}
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-linear-to-r from-[#00affa] to-purple-600 opacity-30 blur-2xl"></div>
-              <img
-                src="/img/banner.png"
-                alt="Academia moderna com luzes neon"
-                className="relative h-100 w-full rounded-2xl object-cover shadow-2xl ring-1 ring-white/10"
-              />
-              <div className="absolute -bottom-10 -left-6 hidden rounded-xl border border-slate-700 bg-[#0d1017]/95 p-4 shadow-xl backdrop-blur-sm md:block">
+
+              <div className="relative h-100 w-full overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
+                {images.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Banner ${index + 1}`}
+                    className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
+                      index === currentImage ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                ))}
+              </div>
+
+              {/* Floating Code UI */}
+              <div className="absolute -bottom-10 -left-6 z-20 hidden rounded-xl border border-slate-700 bg-[#0d1017]/95 p-4 shadow-xl backdrop-blur-sm md:block">
                 <div className="mb-2 flex items-center gap-2 border-b border-slate-700 pb-2">
                   <Terminal size={16} className="text-[#00affa]" />
                   <span className="font-mono text-xs text-slate-400">
@@ -249,18 +279,6 @@ export function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="absolute top-0 left-1/2 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
-          aria-hidden="true"
-        >
-          <div
-            className="aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          ></div>
         </div>
       </section>
     </div>
