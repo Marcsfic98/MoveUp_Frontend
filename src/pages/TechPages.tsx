@@ -87,7 +87,7 @@ export function TechPage() {
             Gostou da nossa arquitetura?
           </h3>
           <Link
-            to="/contatos"
+            to="/contact"
             className="inline-flex items-center justify-center rounded-lg bg-[#00affa] px-8 py-4 font-bold text-[#040c25] transition-transform hover:scale-105 hover:bg-[#33bfff]"
           >
             Entre em contato
