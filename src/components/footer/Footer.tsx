@@ -11,8 +11,8 @@ export function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-[#0d1017] pt-12 pb-6 font-sans">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div>
+        <div className="mb-12 grid grid-cols-1 items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Institucional
             </h3>
@@ -24,7 +24,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="transition hover:text-blue-500">
-                  Nossas Lojas
+                  Outros Projetos
                 </a>
               </li>
               <li>
@@ -40,7 +40,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Atendimento
             </h3>
@@ -62,13 +62,13 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="transition hover:text-blue-500">
-                  Como comprar
+                  Como contratar
                 </a>
               </li>
             </ul>
           </div>
 
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Fale Conosco
             </h3>
@@ -96,7 +96,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Segurança
             </h3>
@@ -119,14 +119,14 @@ export function Footer() {
               <h3 className="mb-2 text-xs font-bold tracking-wider text-blue-600 uppercase">
                 Pagamento
               </h3>
-              <div className="flex gap-2 opacity-70 transition hover:opacity-100">
-                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+              <div className="flex gap-2 opacity-70 transition">
+                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black hover:opacity-100">
                   VISA
                 </div>
-                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black hover:opacity-100">
                   MASTER
                 </div>
-                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black hover:opacity-100">
                   PIX
                 </div>
               </div>
