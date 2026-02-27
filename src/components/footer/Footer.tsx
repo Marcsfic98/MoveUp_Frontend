@@ -11,8 +11,8 @@ export function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-[#0d1017] pt-12 pb-6 font-sans">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-12 grid grid-cols-1 items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div>
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Institucional
             </h3>
@@ -24,7 +24,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="transition hover:text-blue-500">
-                  Outros Projetos
+                  Nossas Lojas
                 </a>
               </li>
               <li>
@@ -40,7 +40,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+          <div>
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Atendimento
             </h3>
@@ -62,13 +62,13 @@ export function Footer() {
               </li>
               <li>
                 <a href="#" className="transition hover:text-blue-500">
-                  Como contratar
+                  Como comprar
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+          <div>
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Fale Conosco
             </h3>
@@ -96,7 +96,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+          <div>
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Segurança
             </h3>
@@ -115,19 +115,32 @@ export function Footer() {
                 </span>
               </div>
             </div>
+            {/* Pagamento */}
             <div className="mt-6">
               <h3 className="mb-2 text-xs font-bold tracking-wider text-blue-600 uppercase">
                 Pagamento
               </h3>
-              <div className="flex gap-2 opacity-70 transition">
-                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black hover:opacity-100">
-                  VISA
+              <div className="flex gap-2 opacity-70 transition hover:opacity-100">
+                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                  <img
+                    className="w-10"
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/d589be70-eb86-11e9-b9a8-097ac027487d-l.svg"
+                    alt="card visa"
+                  />
                 </div>
-                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black hover:opacity-100">
-                  MASTER
+                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                  <img
+                    className="w-9"
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/9cf818e0-723a-11f0-a459-cf21d0937aeb-l.svg"
+                    alt="card master"
+                  />
                 </div>
-                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black hover:opacity-100">
-                  PIX
+                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                  <img
+                    className="w-11"
+                    src="https://http2.mlstatic.com/storage/logos-api-admin/f99fcca0-f3bd-11eb-9984-b7076edb0bb7-l.svg"
+                    alt="pix"
+                  />
                 </div>
               </div>
             </div>
