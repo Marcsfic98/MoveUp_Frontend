@@ -1,72 +1,48 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom"
+import { AudioController } from "../audio/AudioController"
 
-function Navbar() {
-  const baseLinkClasses =
-    "relative transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:transition-all after:duration-300";
-
+export function Navbar() {
   return (
-    <header className="w-full bg-cyan-950/90 backdrop-blur-sm text-white border-b border-cyan-800/70">
-      <nav className="max-w-6xl mx-auto flex items-center justify-between px-8 py-3">
-        
-        <NavLink
-          to="/home"
-          className="text-3xl font-bold tracking-wide hover:text-cyan-600 transition-colors"
-        >
-          NomeSite
-        </NavLink>
+    <header className="sticky top-0 z-50 w-full border-b border-[#00affa]/30 bg-[#0d1017] py-4 shadow-[0_4px_20px_-5px_rgba(0,175,250,0.3)] backdrop-blur-sm transition-all duration-500">
+      <nav className="mx-auto grid max-w-7xl grid-cols-3 items-center px-6">
+        <div className="flex justify-start">
+          <Link to="/home" className="block h-16 w-16 overflow-hidden">
+            <img
+              src="/img/logo/logo.jpeg"
+              alt="Logo MoveUp"
+              className="h-full w-full object-cover"
+            />
+          </Link>
+        </div>
 
-        <ul className="flex gap-8 text-lg lg:text-xl font-semibold">
+        <ul className="flex justify-center gap-8 text-lg font-semibold text-[#244e73] md:gap-10">
           <li>
-            <NavLink
-              to="/home"
-              className={({ isActive }) =>
-                [
-                  baseLinkClasses,
-                  isActive
-                    ? "text-cyan-600 after:w-full after:bg-cyan-600"
-                    : "hover:text-cyan-600 after:w-0 after:bg-cyan-600 hover:after:w-full",
-                ].join(" ")
-              }
-            >
+            <Link to="/home" className="transition-colors hover:text-[#00affa]">
               Home
-            </NavLink>
+            </Link>
           </li>
-
           <li>
-            <NavLink
-              to="/sobre"
-              className={({ isActive }) =>
-                [
-                  baseLinkClasses,
-                  isActive
-                    ? "text-cyan-600 after:w-full after:bg-cyan-600"
-                    : "hover:text-cyan-600 after:w-0 after:bg-cyan-600 hover:after:w-full",
-                ].join(" ")
-              }
-            >
-              Sobre
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/contato"
-              className={({ isActive }) =>
-                [
-                  baseLinkClasses,
-                  isActive
-                    ? "text-cyan-600 after:w-full after:bg-cyan-600"
-                    : "hover:text-cyan-600 after:w-0 after:bg-cyan-600 hover:after:w-full",
-                ].join(" ")
-              }
+            <Link
+              to="/contact"
+              className="transition-colors hover:text-[#00affa]"
             >
               Contato
-            </NavLink>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className="transition-colors hover:text-[#00affa]"
+            >
+              Sobre
+            </Link>
           </li>
         </ul>
+
+        <div className="flex justify-end">
+          <AudioController />
+        </div>
       </nav>
     </header>
-  );
+  )
 }
-
-export default Navbar;
