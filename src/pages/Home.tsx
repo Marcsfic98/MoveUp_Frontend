@@ -33,12 +33,12 @@ export function Home() {
       <section className="relative overflow-hidden pt-20 pb-32 lg:pt-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-y-16 lg:grid-cols-2 lg:gap-x-16">
-            <div className="relative z-10">
-              <div className="mb-6 inline-flex items-center rounded-full border border-[#00affa]/30 bg-[#00affa]/10 px-3 py-1 text-sm font-medium text-[#00affa]">
+            <div className="mt-[-3rem] lg:mt-[-5rem] relative z-10">
+              <div className="hidden lg:mb-6 lg:inline-flex lg:items-center lg: lg:rounded-full lg:border border-[#00affa]/30 bg-[#00affa]/10 px-3 py-1 text-sm font-medium text-[#00affa]">
                 <span className="mr-2 flex h-2 w-2 animate-pulse rounded-full bg-[#00affa]"></span>
                 Versão 1.0 Disponível
               </div>
-              <h1 className="mb-6 text-5xl font-black tracking-tight text-white sm:text-6xl">
+              <h1 className="mb-5 text-5xl font-black tracking-tight text-white sm:text-6xl">
                 Gerencie treinos com <br />
                 <span className="bg-linear-to-r from-[#00affa] to-purple-500 bg-clip-text text-transparent">
                   Inteligência e Performance
@@ -50,16 +50,16 @@ export function Home() {
                 buscam escalabilidade, organização e segurança na gestão de
                 alunos.
               </p>
-              <div className="flex flex-col items-center gap-6 md:flex-row">
+              <div className="flex  items-center gap-6 ">
                 <Link
                   to="/tech"
-                  className="rounded-lg bg-[#00affa] px-6 py-3 text-sm font-bold text-[#040c25] shadow-[0_0_20px_rgba(0,175,250,0.3)] transition-transform hover:scale-105 hover:bg-[#33bfff]"
+                  className="rounded-lg bg-[#00affa] px-3 lg:px-6 py-3 text-sm font-bold text-[#040c25] shadow-[0_0_20px_rgba(0,175,250,0.3)] transition-transform hover:scale-105 hover:bg-[#33bfff]"
                 >
                   Conheça a Tecnologia
                 </Link>
                 <Link
                   to="/contact"
-                  className="group flex items-center gap-2 text-sm leading-6 font-semibold text-white"
+                  className="rounded-lg bg-white px-6 lg:px-9 py-3 text-sm font-bold text-slate-950 shadow-[0_0_20px_rgba(0,175,250,0.3)] transition-transform hover:scale-105 hover:bg-[#33bfff]"
                 >
                   Fale com o time{" "}
                   <span
@@ -72,7 +72,7 @@ export function Home() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="mt-[-1rem] relative">
               <div className="absolute -inset-4 rounded-xl bg-linear-to-r from-[#00affa] to-purple-600 opacity-30 blur-2xl"></div>
 
               <div className="relative h-100 w-full overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
@@ -107,7 +107,7 @@ export function Home() {
       </section>
 
       <section className="bg-[#051d37] py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div  className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <h2 className="text-base leading-7 font-bold tracking-wide text-[#00affa] uppercase">
               A Missão

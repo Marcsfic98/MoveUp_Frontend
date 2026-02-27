@@ -10,8 +10,9 @@ import {
 export function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-[#0d1017] pt-12 pb-6 font-sans">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto max-w-7xl px-5">
+        <div className="mb-12 grid grid-cols-2 gap-9 pl-5 md:grid-cols-2 lg:grid-cols-4">
+          {/* Institucional */}
           <div>
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Institucional
@@ -39,7 +40,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-
+          {/* Atendimento */}
           <div>
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Atendimento
@@ -67,7 +68,7 @@ export function Footer() {
               </li>
             </ul>
           </div>
-
+          {/* Fale conosco */}
           <div>
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Fale Conosco
@@ -95,53 +96,83 @@ export function Footer() {
               />
             </div>
           </div>
-
-          <div>
+          {/* Segurança */}
+          <div className="justify-items-start">
             <h3 className="mb-4 text-sm font-bold tracking-wider text-blue-600 uppercase">
               Segurança
             </h3>
-            <div className="flex flex-wrap items-center gap-4">
-              <div className="flex items-center gap-1 rounded border border-slate-800 bg-[#051e38] p-2 shadow-sm">
+            <div className="flex flex-col items-center lg:justify-start gap-4 lg:flex-row lg:flex-wrap lg:items-center">
+              <div className="flex w-28 items-center gap-1 rounded border border-slate-800 bg-[#051e38] p-2 shadow-sm">
                 <ShieldCheck size={24} className="text-green-500" />
-                <span className="text-[10px] leading-tight font-bold text-slate-300">
-                  SITE
-                  <br />
-                  SEGURO
+                <span className="w- text-[10px] leading-tight font-bold text-slate-300">
+                  SITE SEGURO
                 </span>
               </div>
-              <div className="rounded border border-slate-800 bg-[#051e38] p-2 shadow-sm">
+
+              <div className="w-28 rounded border border-slate-800 bg-[#051e38] p-2 text-center shadow-sm">
                 <span className="text-[10px] font-bold text-slate-300 italic">
                   ANVISA
                 </span>
               </div>
+
+              {/* Pagamento posicionamento desktop */}
+              <div className="hidden lg:items-start lg:flex lg:mt-2 lg:flex-col lg:gap-2">
+                <h3 className="mb-2 text-sm font-bold tracking-wider text-blue-600 uppercase">
+                  Pagamento
+                </h3>
+                <div className="flex gap-2 ">
+                  <div className="opacity-100 transition hover:opacity-70 flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                    <img
+                      className="w-10"
+                      src="https://http2.mlstatic.com/storage/logos-api-admin/d589be70-eb86-11e9-b9a8-097ac027487d-l.svg"
+                      alt="card visa"
+                    />
+                  </div>
+                  <div className="opacity-100 transition hover:opacity-70 flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                    <img
+                      className="w-9"
+                      src="https://http2.mlstatic.com/storage/logos-api-admin/9cf818e0-723a-11f0-a459-cf21d0937aeb-l.svg"
+                      alt="card master"
+                    />
+                  </div>
+                  <div className="opacity-100 transition hover:opacity-70 flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                    <img
+                      className="w-11"
+                      src="https://http2.mlstatic.com/storage/logos-api-admin/f99fcca0-f3bd-11eb-9984-b7076edb0bb7-l.svg"
+                      alt="pix"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            {/* Pagamento */}
-            <div className="mt-6">
-              <h3 className="mb-2 text-xs font-bold tracking-wider text-blue-600 uppercase">
-                Pagamento
-              </h3>
-              <div className="flex gap-2 opacity-70 transition hover:opacity-100">
-                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
-                  <img
-                    className="w-10"
-                    src="https://http2.mlstatic.com/storage/logos-api-admin/d589be70-eb86-11e9-b9a8-097ac027487d-l.svg"
-                    alt="card visa"
-                  />
-                </div>
-                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
-                  <img
-                    className="w-9"
-                    src="https://http2.mlstatic.com/storage/logos-api-admin/9cf818e0-723a-11f0-a459-cf21d0937aeb-l.svg"
-                    alt="card master"
-                  />
-                </div>
-                <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
-                  <img
-                    className="w-11"
-                    src="https://http2.mlstatic.com/storage/logos-api-admin/f99fcca0-f3bd-11eb-9984-b7076edb0bb7-l.svg"
-                    alt="pix"
-                  />
-                </div>
+          </div>
+
+          {/* Pagamento posicionamento mobile*/}
+          <div className="items-start flex mt-2 flex-col gap-2 md:hidden">
+            <h3 className="mb-2 text-xs font-bold tracking-wider text-blue-600 uppercase">
+              Pagamento
+            </h3>
+            <div className="flex gap-2 opacity-70 transition hover:opacity-100">
+              <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                <img
+                  className="w-10"
+                  src="https://http2.mlstatic.com/storage/logos-api-admin/d589be70-eb86-11e9-b9a8-097ac027487d-l.svg"
+                  alt="card visa"
+                />
+              </div>
+              <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                <img
+                  className="w-9"
+                  src="https://http2.mlstatic.com/storage/logos-api-admin/9cf818e0-723a-11f0-a459-cf21d0937aeb-l.svg"
+                  alt="card master"
+                />
+              </div>
+              <div className="flex h-8 w-12 items-center justify-center rounded bg-white text-[10px] font-bold text-black">
+                <img
+                  className="w-11"
+                  src="https://http2.mlstatic.com/storage/logos-api-admin/f99fcca0-f3bd-11eb-9984-b7076edb0bb7-l.svg"
+                  alt="pix"
+                />
               </div>
             </div>
           </div>

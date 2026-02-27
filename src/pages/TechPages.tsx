@@ -7,18 +7,22 @@ export function TechPage() {
     <div className="min-h-screen bg-[#040c25] px-6 py-20 font-sans text-slate-300 selection:bg-[#00affa] selection:text-[#0d1017]">
       <div className="mx-auto max-w-7xl">
         <header className="mb-20 text-center">
-          <div className="mb-6 flex justify-center">
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#00affa]/10 text-[#00affa] ring-1 ring-[#00affa]/30">
-              <Layers size={32} />
+
+          <div className="lg:mt-[-1rem] flex flex-col lg:flex-row lg:gap-5 lg:justify-center items-center">
+            <div className="mb-6 flex justify-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#00affa]/10 text-[#00affa] ring-1 ring-[#00affa]/30">
+                <Layers size={32} />
+              </div>
             </div>
+
+            <h1 className="lg:flex lg:gap-3  mb-6 text-4xl font-black text-white sm:text-5xl">
+              Stack Tecnológica <br />
+              <span className="bg-linear-to-r from-[#00affa] to-purple-500 bg-clip-text text-transparent">
+                MoveUp
+              </span>
+            </h1>
           </div>
 
-          <h1 className="mb-6 text-4xl font-black text-white sm:text-5xl">
-            Stack Tecnológica <br />
-            <span className="bg-linear-to-r from-[#00affa] to-purple-500 bg-clip-text text-transparent">
-              MoveUp
-            </span>
-          </h1>
           <p className="mx-auto max-w-2xl text-xl leading-relaxed text-slate-400">
             Cada ferramenta foi escolhida estrategicamente para garantir
             performance, escalabilidade e uma excelente experiência de
