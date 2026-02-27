@@ -88,13 +88,13 @@ export const TEAM_MEMBERS: TeamMember[] = [
     github: "https://github.com/Matheus-Lins",
     email: "matheusantonioslins@outlook.com",
     banner: "bg-gradient-to-r from-green-900 to-slate-900",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    bio: "Desenvolvedor Full Stack em início de carreira, unindo base técnica sólida com dedicação, aprendizado constante e foco em construir soluções eficientes.",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. Cras elit nisl, rhoncus nec iaculis ultricies, feugiat eget sapien. Pellentesque ac felis tellus.",
-    skills: ["React", "UX/UI", "Figma", "CSS"],
+      "Minha trajetória na tecnologia começou em 2021, no curso técnico em Informática, onde aprendi programação, redes e manutenção de computadores. Atualmente, estou me especializando no programa Full Stack JavaScript da Generation Brasil, aprendendo TypeScript, Node.js, NestJS, React, SQL e práticas essenciais de versionamento com Git. Além da parte técnica, desenvolvi habilidades importantes como trabalho em equipe, atenção aos detalhes, comunicação e experiência com metodologias ágeis como Scrum. Estou em busca da minha primeira oportunidade como desenvolvedor para aplicar tudo o que venho construindo e continuar evoluindo na área..",
+    skills: ["React", "Nest", "TypeScipt", "SQL", "HTML", "CSS"],
     education: [
-      "Curso Técnico em Informática (2023)",
-      "Bootcamp Fullstack Java - Generation Brasil (2025)",
+      "Curso Técnico em Informática - Senac (Fev/2021 - Nov/2023)",
+      "Bootcamp Fullstack Java - Generation Brasil (Nov/2025 - Mar/2026)",
     ],
   },
   {
