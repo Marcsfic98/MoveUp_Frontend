@@ -22,16 +22,16 @@ export function Navbar() {
           </Link>
         </div>
 
-        <ul className="hidden justify-center gap-8 text-lg font-semibold text-[#244e73] md:flex md:gap-10">
+        <ul className="hidden justify-center gap-8 text-lg font-semibold text-[#00affa] md:flex md:gap-10">
           <li>
-            <Link to="/home" className="transition-colors hover:text-[#00affa]">
+            <Link to="/home" className="transition-colors hover:text-[#244e73]">
               Home
             </Link>
           </li>
           <li>
             <Link
               to="/contact"
-              className="transition-colors hover:text-[#00affa]"
+              className="transition-colors hover:text-[#244e73]"
             >
               Contato
             </Link>
@@ -39,7 +39,7 @@ export function Navbar() {
           <li>
             <Link
               to="/about"
-              className="transition-colors hover:text-[#00affa]"
+              className="transition-colors hover:text-[#244e73]"
             >
               Sobre
             </Link>
