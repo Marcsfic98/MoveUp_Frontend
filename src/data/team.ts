@@ -1,3 +1,4 @@
+
 export interface TeamMember {
   slug: string
   nome: string
@@ -17,19 +18,22 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     slug: "marcos-alexandre",
     nome: "Marcos Alexandre",
-    funcao: "Fullstack Developer",
+    funcao: "Fullstack & Mobile Developer",
     img: "/img/members/marcos.jpeg",
     linkedin: "https://www.linkedin.com/in/marcsfic/",
     github: "https://github.com/Marcsfic98",
     email: "marcsfic98@gmail.com",
     banner: "bg-gradient-to-r from-blue-900 to-slate-900",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    bio: "Desenvolvedor FullStack & Mobile apaixonado por performance e Clean Code. Focado em criar experiências digitais impactantes",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.",
-    skills: ["React", "Node.js", "MySQL", "Scrum"],
+      "Do pacote de rede ao código escalável: Desenvolvedor Full Stack apaixonado por arquitetura e performance.<br/>Com uma base sólida construída na infraestrutura de redes, transicionei para a Engenharia de Software trazendo uma visão que poucos desenvolvedores possuem: o entendimento real de como o dado trafega, da camada física à interface final.<br/>Atualmente, curso Análise e Desenvolvimento de Sistemas e lidero tecnicamente o projeto Serviços Já, selecionado para a pré-incubação na Incubadora I.de.i.as (Senac). Minha missão é transformar requisitos complexos em produtos digitais que resolvem dores reais de mercado."
+,
+  skills: ["Typescript","Next","React","React Native","expo", "Node.js","Nest","Prisma","TypeORM","JWT", "MySQL", "Scrum"],
     education: [
-      "Análise e Desenvolvimento de Sistemas - FICR (2024 - Atual)",
-      "Bootcamp Fullstack Java - Generation Brasil (2025)",
+      "Análise e Desenvolvimento de Sistemas - Mauricio De Nassau(2025 - Atual)",
+      "Bootcamp Fullstack JavaScript - Generation Brasil (2025)",
+      "Bootcamp Fullstack JavaScript - Atlântico Avanti (2025)",
+      "Bootcamp Mobile Developer - MeuTudo (2024)"
     ],
   },
   {
@@ -46,8 +50,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nisi eget libero vulputate dignissim. Curabitur viverra egestas erat, vitae dapibus nisi rhoncus vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer fringilla, diam eget consectetur bibendum, felis metus pellentesque ex, vel scelerisque dui leo ut nisi.",
     skills: ["NestJS", "TypeScript", "TailwindCSS", "PostgreSQL"],
     education: [
-      "Análise e Desenvolvimento de Sistemas - FICR (2024 - Atual)",
-      "Bootcamp Fullstack Java - Generation Brasil (2025)",
+      "Análise e Desenvolvimento de Sistemas - Mauricio De Nassau(2025 - Atual)",
+      "Bootcamp Fullstack JavaScript - Generation Brasil (2025)",
     ],
   },
   {

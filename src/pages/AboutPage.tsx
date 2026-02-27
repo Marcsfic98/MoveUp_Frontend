@@ -74,7 +74,7 @@ export function AboutPage() {
         </section>
 
         <section>
-          <div className="mb-16 text-center">
+          <div id="devs" className="mb-16 text-center">
             <h2 className="text-3xl font-black text-white sm:text-4xl">
               Dream Team
             </h2>

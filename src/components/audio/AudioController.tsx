@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react"
 import { Loader2, Pause, Play } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
 
 declare global {
   interface Window {
@@ -16,6 +16,7 @@ export function AudioController() {
   const playerRef = useRef<any>(null)
 
   useEffect(() => {
+    // 1. Carrega a API do YouTube se não existir
     if (!window.YT) {
       const tag = document.createElement("script")
       tag.src = "https://www.youtube.com/iframe_api"
@@ -41,16 +42,22 @@ export function AudioController() {
           controls: 0,
           start: 5,
           loop: 1,
-          playlist: "FGBhQbmPwH8",
+          playlist: "FGBhQbmPwH8", // Necessário para o loop funcionar
         },
         events: {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           onReady: (event: any) => {
             setIsApiReady(true)
-            event.target.playVideo()
+
+            // --- LÓGICA DE 5 SEGUNDOS ---
+            setTimeout(() => {
+              // Tenta dar o play após 5 segundos
+              event.target.playVideo()
+            }, 2000)
           },
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           onStateChange: (event: any) => {
+            // event.data === 1 significa "Playing"
             if (event.data === 1) setIsPlaying(true)
             else setIsPlaying(false)
           },
@@ -71,22 +78,29 @@ export function AudioController() {
 
   return (
     <div className="flex items-center gap-3 rounded-full border border-white/5 bg-black/20 px-3 py-1 backdrop-blur-md">
+      {/* Container do player (invisível) */}
       <div id="youtube-player-hidden" className="hidden"></div>
 
-     
+      {/* Visualizer de Barras */}
       <div className="flex h-4 w-6 items-end gap-0.5">
-        
         <div
-          className={`w-1.5 rounded-t bg-[#00affa] transition-all duration-300 ${isPlaying ? "h-3 animate-bounce" : "h-1"}`}
+          className={`w-1.5 rounded-t bg-[#00affa] transition-all duration-300 ${
+            isPlaying ? "h-3 animate-bounce" : "h-1"
+          }`}
         ></div>
         <div
-          className={`w-1.5 rounded-t bg-[#00affa] transition-all duration-300 ${isPlaying ? "h-4 animate-[bounce_0.6s_infinite]" : "h-2"}`}
+          className={`w-1.5 rounded-t bg-[#00affa] transition-all duration-300 ${
+            isPlaying ? "h-4 animate-[bounce_0.6s_infinite]" : "h-2"
+          }`}
         ></div>
         <div
-          className={`w-1.5 rounded-t bg-[#00affa] transition-all duration-300 ${isPlaying ? "h-2 animate-[bounce_0.8s_infinite]" : "h-1.5"}`}
+          className={`w-1.5 rounded-t bg-[#00affa] transition-all duration-300 ${
+            isPlaying ? "h-2 animate-[bounce_0.8s_infinite]" : "h-1.5"
+          }`}
         ></div>
       </div>
 
+      {/* Botão de Controle */}
       <button
         onClick={toggle}
         disabled={!isApiReady}

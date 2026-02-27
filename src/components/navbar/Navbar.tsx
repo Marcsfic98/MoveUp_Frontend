@@ -5,12 +5,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#00affa]/30 bg-[#0d1017] py-4 shadow-[0_4px_20px_-5px_rgba(0,175,250,0.3)] backdrop-blur-sm transition-all duration-500">
       <nav className="mx-auto grid max-w-7xl grid-cols-3 items-center px-6">
-        
         <div className="flex justify-start">
-          <Link
-            to="/home"
-            className="block h-16 w-16 overflow-hidden rounded-full"
-          >
+          <Link to="/home" className="block h-16 w-16 overflow-hidden">
             <img
               src="/img/logo/logo.jpeg"
               alt="Logo MoveUp"
@@ -43,7 +39,6 @@ export function Navbar() {
           </li>
         </ul>
 
-        
         <div className="flex justify-end">
           <AudioController />
         </div>
