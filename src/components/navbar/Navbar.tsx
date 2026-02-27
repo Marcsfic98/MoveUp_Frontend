@@ -29,11 +29,8 @@ export function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
-              to="/contact"
-              className="transition-colors hover:text-[#244e73]"
-            >
-              Contato
+            <Link to="/tech" className="transition-colors hover:text-[#244e73]">
+              Tecnologias
             </Link>
           </li>
           <li>
@@ -42,6 +39,14 @@ export function Navbar() {
               className="transition-colors hover:text-[#244e73]"
             >
               Sobre
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="transition-colors hover:text-[#244e73]"
+            >
+              Contato
             </Link>
           </li>
         </ul>
