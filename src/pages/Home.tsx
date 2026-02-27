@@ -238,10 +238,10 @@ export function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             <div className="max-w-xl lg:max-w-lg">
-              <h2 className="text-3xl font-bold tracking-tight text-[#0d1017] sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Conheça quem faz acontecer
               </h2>
-              <p className="mt-4 text-lg leading-8 text-[#0d1017]/80">
+              <p className="mt-4 text-lg leading-8 text-white/80">
                 Somos o Grupo 2 da Generation Brasil. Uma equipe de
                 desenvolvedores Fullstack apaixonados por resolver problemas
                 reais com código limpo.
@@ -258,10 +258,10 @@ export function Home() {
             </div>
 
             <div className="max-w-xl border-l border-[#0d1017]/20 pl-0 lg:max-w-lg lg:pl-10">
-              <h2 className="text-3xl font-bold tracking-tight text-[#0d1017] sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Vamos construir juntos?
               </h2>
-              <p className="mt-4 text-lg leading-8 text-[#0d1017]/80">
+              <p className="mt-4 text-lg leading-8 text-white/80">
                 Tem dúvidas sobre a implementação ou quer contribuir com o
                 projeto open-source? Entre em contato agora mesmo.
               </p>
