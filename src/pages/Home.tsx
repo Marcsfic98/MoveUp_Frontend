@@ -33,7 +33,7 @@ export function Home() {
       <section className="relative overflow-hidden pt-20 pb-32 lg:pt-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-y-16 lg:grid-cols-2 lg:gap-x-16">
-            <div className="mt-[-3rem] lg:mt-[-5rem] relative z-10">
+            <div className="-mt-12 lg:-mt-20 relative z-10">
               <div className="hidden lg:mb-6 lg:inline-flex lg:items-center lg: lg:rounded-full lg:border border-[#00affa]/30 bg-[#00affa]/10 px-3 py-1 text-sm font-medium text-[#00affa]">
                 <span className="mr-2 flex h-2 w-2 animate-pulse rounded-full bg-[#00affa]"></span>
                 Versão 1.0 Disponível
@@ -72,7 +72,7 @@ export function Home() {
               </div>
             </div>
 
-            <div className="mt-[-1rem] relative">
+            <div className="-mt-4 relative">
               <div className="absolute -inset-4 rounded-xl bg-linear-to-r from-[#00affa] to-purple-600 opacity-30 blur-2xl"></div>
 
               <div className="relative h-100 w-full overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
