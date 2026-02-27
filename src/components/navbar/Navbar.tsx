@@ -1,49 +1,69 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const baseLinkClasses =
+    "relative transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:transition-all after:duration-300";
+
   return (
-    <header className="w-full bg-teal-950/90 backdrop-blur-sm text-white py-4 shadow-lg">
-      <nav className="max-w-5xl mx-auto flex items-center justify-between px-4">
+    <header className="w-full bg-cyan-950/90 backdrop-blur-sm text-white border-b border-cyan-800/70">
+      <nav className="max-w-6xl mx-auto flex items-center justify-between px-8 py-3">
+        
+        <NavLink
+          to="/home"
+          className="text-3xl font-bold tracking-wide hover:text-cyan-600 transition-colors"
+        >
+          NomeSite
+        </NavLink>
 
-        <Link to="/home "className="text-3xl font-bold tracking-wide hover:text-teal-300 transition-colors"
-        >NomeSite
-        </Link>
-
-        {/* Menu */}
-        <ul className="flex gap-10 text-xl font-semibold">
+        <ul className="flex gap-8 text-lg lg:text-xl font-semibold">
           <li>
-            <Link
-              to="/home" className="relative hover:text-teal-300 transition-colors 
-              after:content-[''] after:absolute after:left-0 after:-bottom-1 
-              after:w-0 after:h-0.5 after:bg-teal-400 after:transition-all 
-              after:duration-300 hover:after:w-full"
-            >Home
-            </Link>
+            <NavLink
+              to="/home"
+              className={({ isActive }) =>
+                [
+                  baseLinkClasses,
+                  isActive
+                    ? "text-cyan-600 after:w-full after:bg-cyan-600"
+                    : "hover:text-cyan-600 after:w-0 after:bg-cyan-600 hover:after:w-full",
+                ].join(" ")
+              }
+            >
+              Home
+            </NavLink>
           </li>
 
           <li>
-            <Link
+            <NavLink
               to="/sobre"
-              className="relative hover:text-teal-300 transition-colors 
-              after:content-[''] after:absolute after:left-0 after:-bottom-1 
-              after:w-0 after:h-0.5 after:bg-teal-400 after:transition-all 
-              after:duration-300 hover:after:w-full"
-            >Sobre
-            </Link>
+              className={({ isActive }) =>
+                [
+                  baseLinkClasses,
+                  isActive
+                    ? "text-cyan-600 after:w-full after:bg-cyan-600"
+                    : "hover:text-cyan-600 after:w-0 after:bg-cyan-600 hover:after:w-full",
+                ].join(" ")
+              }
+            >
+              Sobre
+            </NavLink>
           </li>
 
           <li>
-            <Link
+            <NavLink
               to="/contato"
-              className="relative hover:text-teal-300 transition-colors 
-              after:content-[''] after:absolute after:left-0 after:-bottom-1 
-              after:w-0 after:h-0.5 after:bg-teal-400 after:transition-all 
-              after:duration-300 hover:after:w-full"
-            >Contato
-            </Link>
+              className={({ isActive }) =>
+                [
+                  baseLinkClasses,
+                  isActive
+                    ? "text-cyan-600 after:w-full after:bg-cyan-600"
+                    : "hover:text-cyan-600 after:w-0 after:bg-cyan-600 hover:after:w-full",
+                ].join(" ")
+              }
+            >
+              Contato
+            </NavLink>
           </li>
         </ul>
-
       </nav>
     </header>
   );
